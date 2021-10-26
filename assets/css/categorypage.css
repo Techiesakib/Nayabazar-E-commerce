@@ -1,0 +1,49 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* vertical nav close  */
+        
+        .vertical_main {
+            background: #fff;
+            position: absolute;
+            top: 100;
+            z-index: 299;
+            width: 260px;
+            transition: 0.2s;
+            visibility: hidden;
+            border: 1px solid #F3D250;
+            transition: .2s ease-in-out;
+        }
+        
+        .stand:hover .vertical_main {
+            visibility: visible;
+            cursor: pointer;
+        }
+        /* Product category wise */
+        
+        .category_heading {
+            text-align: center;
+            color: silver;
+            padding: 20px 0;
+        }
+        
+        .category_heading h3 a {
+            color: silver;
+            text-decoration: none;
+        }
+        
+        .all {
+            float: right;
+        }
+        
+        .all select {
+            border: 2px solid #F3D250;
+            background-color: #F3D250;
+            padding: 10px 10px;
+        }
+        
+        .category_product {
+            padding-top: 50px;
+        }

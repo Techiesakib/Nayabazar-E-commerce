@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* vertical nav close  */
+
+.vertical_main {
+    background: #fff;
+    position: absolute;
+    top: 100;
+    z-index: 299;
+    width: 260px;
+    transition: 0.2s;
+    visibility: hidden;
+    border: 1px solid #F3D250;
+    transition: .2s ease-in-out;
+}
+
+.stand:hover .vertical_main {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/* track bg section  */
+
+.track_bg {
+    background-image: url(https://images.pexels.com/photos/7706574/pexels-photo-7706574.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.track {
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+
+.track h1 {
+    position: relative;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.track h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.track h1::after {
+    content: "";
+    background: #fff;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 110%;
+    transform: translate(-50%);
+}
+
+
+/* track details section  */
+
+.details {
+    text-align: center;
+    padding: 10px 50px;
+    /* width: 500px; */
+}
+
+.details p {
+    padding: 10px 190px 0 190px;
+    margin-bottom: 0;
+}
+
+.details input {
+    font-size: 14px;
+    width: 700px;
+    height: 40px;
+    border: 2px solid #F3D250;
+    text-align: center;
+    outline: none;
+}
+
+.details label {
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.order {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #F3D250;
+    color: black;
+    padding: 15px 35px;
+    transition: .5s;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.order:hover {
+    color: white;
+    background: #dbb620;
+}

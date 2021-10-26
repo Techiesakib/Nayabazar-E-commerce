@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* vertical nav close  */
+
+.vertical_main {
+    background: #fff;
+    position: absolute;
+    top: 100;
+    z-index: 299;
+    width: 260px;
+    transition: 0.2s;
+    visibility: hidden;
+    border: 1px solid #F3D250;
+    transition: .2s ease-in-out;
+}
+
+.stand:hover .vertical_main {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/* store bg section  */
+
+.store_bg {
+    background-image: url(https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.store {
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+
+.store h1 {
+    position: relative;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.store h1 a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.store h1::after {
+    content: "";
+    background: #fff;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 110%;
+    transform: translate(-50%);
+}
+
+
+/* store details section  */
+
+.store_details {
+    padding: 50px 0;
+}
+
+.store_info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.store_info h4 {
+    position: relative;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.store_info h4::after {
+    content: "";
+    background: #F3D250;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 110%;
+    transform: translate(-50%);
+}
+
+.store_info img {
+    margin-right: 10px;
+}
+
+.call {
+    font-weight: bold;
+    color: #dbb620;
+}

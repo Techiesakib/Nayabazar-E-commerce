@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* vertical nav close  */
+
+.vertical_main {
+    background: #fff;
+    position: absolute;
+    top: 100;
+    z-index: 299;
+    width: 260px;
+    transition: 0.2s;
+    visibility: hidden;
+    border: 1px solid #F3D250;
+    transition: .2s ease-in-out;
+}
+
+.stand:hover .vertical_main {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/* store bg section  */
+
+.product_bg {
+    background-image: url(https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product {
+    padding-top: 70px;
+}
+
+.product h1 {
+    position: relative;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.product h1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.product h1::after {
+    content: "";
+    background: #fff;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 110%;
+    transform: translate(-50%);
+}
+
+
+/* products section  */
+
+.products {
+    padding: 50px;
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.all select {
+    border: 2px solid #F3D250;
+    background-color: #F3D250;
+}
+
+.all h3 a {
+    color: #F3D250;
+    text-decoration: none;
+}
+
+.fil {
+    margin-left: 20px;
+    color: #F3D250;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.sel {
+    margin-right: 30px;
+}
+
+select {
+    border: 2px solid #04d36b;
+    padding: 2px 2px;
+}
+
+option {
+    border: 2px solid #04d36b;
+}
+
+.box {
+    width: 250px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px 10px 25px 10px;
+}
+
+.slider {
+    position: relative;
+    height: 250px;
+}
+
+.slider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.buy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: #f3d2507a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.box:hover .buy {
+    visibility: visible;
+    animation: fadeImage o.5s;
+    cursor: pointer;
+}
+
+.bye {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.bye:hover {
+    color: white;
+    background-color: #F3D250;
+    transition: .2S ease-in-out;
+}
+
+.detail_box {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.detail_box a {
+    display: inline-block;
+}
+
+.detail_box a:hover {
+    color: black;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_name {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #111;
+    text-decoration: none;
+}
+
+.price {
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.prices {
+    color: #111;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.detail_box .quick {
+    color: #fff;
+    background-color: #F3D250;
+    padding: 7px 12px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+.detail_box .quick:hover {
+    background-color: #ddb620;
+    color: #fff;
+}
+
+@keyframes fadeImage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* number part  */
+
+.number {
+    padding-top: 50px;
+}
+
+.number ul li {
+    border: 2px solid #F3D250;
+}
+
+.number ul li a {
+    color: #F3D250;
+}
+
+.number ul li a:hover {
+    background: #F3D250;
+    color: #fff;
+}

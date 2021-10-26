@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+
+/* vertical nav  */
+
+.vertical_main {
+    background: #fff;
+    position: absolute;
+    top: 100;
+    z-index: 299;
+    width: 260px;
+    transition: 0.2s;
+    visibility: hidden;
+    border: 1px solid #F3D250;
+}
+
+.stand:hover {
+    cursor: pointer;
+}
+
+.stand:hover .vertical_main {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/* account dropdown  */
+
+.account_main {
+    border: 1px solid #dbb620;
+    position: absolute;
+    z-index: 99;
+    top: 45px;
+    background-color: #fff;
+    visibility: hidden;
+    /* display: none; */
+    transition: .5s ease-in-out;
+}
+
+nav .profile:hover .account_main ul {
+    visibility: visible;
+    /* display: block; */
+}
+
+
+/* payment  */
+
+.main_pay {
+    border: 1px solid silver;
+    width: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.logo_brand {
+    border-radius: 50%;
+    border: 2px solid #dbb620;
+    /* padding: 5px; */
+    position: absolute;
+    left: 38%;
+    top: -8%;
+}
+
+.title_brand {
+    margin-top: 55px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.full_mini {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.full_mini a {
+    text-decoration: none;
+}
+
+.mini_support {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.mini_support a img {
+    background: rgb(223, 221, 221);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.mini_support p {
+    font-size: 13px;
+}
+
+.system {
+    background-color: #cca91e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.system h6 {
+    margin-bottom: 0;
+    padding: 10px 10px;
+}
+
+.system h6 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.system h6:hover {
+    background-color: #f1c513;
+}
+
+.card_img {
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.card_form {
+    padding: 0 15px;
+}
+
+.card_form input {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid silver;
+    outline: none;
+    margin: 5px 0;
+}
+
+.mm_cv input {
+    width: 48%;
+    float: left;
+}
+
+.mm_cv input:last-child {
+    margin-left: 13px;
+}
+
+.save {
+    margin: 10px 15px;
+    padding: 15px 15px 0 15px;
+    border: 1px solid silver;
+    background-color: rgb(224, 221, 221);
+}
+
+.save input,
+label {
+    font-size: 14px;
+}
+
+.save hr {
+    margin: 0;
+}
+
+.save p {
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+    margin-bottom: 0;
+}
+
+.save p a {
+    text-decoration: none;
+}
+
+.brand_name {
+    font-weight: bold;
+    color: #111;
+}
+
+.paid {
+    background-color: #dbb620;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+    transition: .2s ease-in-out;
+}
+
+.paid a {
+    text-decoration: none;
+    color: #111;
+}
+
+.paid:hover {
+    background-color: #c29d0a;
+    cursor: pointer;
+}
+
+
+/* mobile bank */
+
+.mobile_bank {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.item {
+    margin: 5px;
+    opacity: 0.3;
+    transition: .2s ease-in-out;
+}
+
+.item:hover {
+    opacity: 1;
+}

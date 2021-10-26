@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+</head>
+
+<body>
+    <!-- header section  -->
+    <section class="main_header">
+        <div class="header_top">
+            <div class="container">
+                <div class="main_ul">
+                    <ul class="justify-content-end">
+                        <li><a href="#">How to order</a></li>
+                        <li><a href="#foot">faqs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- navbar  -->
+        <div class="container">
+            <nav class="navbar  navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img title="Logo" src="" alt="">Nayabazar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav  justify-content-end w-100">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link" href="products.html">PRODUCTS</a>
+                            <a class="nav-link" href="track.html">TRACK ORDER</a>
+                            <a class="nav-link" href="store.html">STORES</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a id="myBtn" class="nav-link profile" href="#">SIGN/My Account   
+                        </a>
+                            <div class="account_main">
+                                <ul>
+                                    <li>
+                                        <a href="">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Orders</a>
+                                    </li>
+                                    <li><a href="">My Profile</a></li>
+                                    <li>
+                                        <a href="">Addresses</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="search">
+                <div class="row">
+                    <div class="col-lg-3 stand">
+                        <div class="menu_icon ">
+                            <img src="images/menu.png" width="25px" alt="">
+                            <h6>BROWSE CATEGORIES</h6>
+                        </div>
+                        <div class="vertical_main">
+                            <ul>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Fruits <img class="fru" width="15px" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/>
+                                </a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Groceries <img width="15px" class="gro" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Snacks <img width="15px" class="sna" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Dairy <img width="15px" class="dai" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Health Products<img width="15px" class="hea" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Meat <img width="15px" class="mea" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Vegetables <img width="15px" class="veg" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Honey <img width="15px" class="hon" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Fish <img width="15px" class="fis" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Beverages <img width="15px" class="bev" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="products_cat"><a class="fri" href="categorypage.html">Books<img width="15px" class="hon" src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/></a>
+                                    <div class="products_list">
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                        <div class="products_main">
+                                            <a class="products_head" href="">Fruit</a>
+                                            <div class="products_name">
+                                                <a href="">Banana</a>
+                                                <a href="">Apple</a>
+                                                <a href="">Mango</a>
+                                                <a href="">Orange</a>
+                                                <a href="">Grape</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="d-flex">
+                            <input class="form-control me-2 your" type="search" placeholder="Search Your Products" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="col-lg-2  right_sign">
+                        <div class="login">
+                            <ul>
+                                <li class="left_cart">
+                                    <a href="#"><img title="Cart" src="assets/images/cart.png" width="25px" alt=""></a>
+                                </li>
+                                <li class="taka">
+                                    <a href="">৳.<span class="dollar">1,050,000</span> </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header end  -->
+    <!-- cart section  -->
+    <h5 class="cart_heading" style="text-align: center;"> <a href="index.html">Home</a>/ <a href="products.html">product</a>/ cart</h5>
+    <!-- big cart  -->
+    <div class="container">
+        <div class="detail_cart">
+            <div class="row">
+                <div class="col-8">
+                    <table>
+                        <tr class="firstrow">
+                            <th></th>
+                            <th>Product name</th>
+                            <th>price</th>
+                            <th>Quantity</th>
+                            <th>subtotal</th>
+                        </tr>
+                        <tr class="secondrow">
+                            <td class="and">&times;</td>
+                            <td><img class="cart_img" src="assets/images/New slider/honey.png" width="50px" alt="">
+                                <h5 class="grocery_name">Honey 200gm</h5>
+                            </td>
+                            <td>৳.195</td>
+                            <td>
+                                <div class="add">
+                                    <button class="minus">-</button>
+                                    <p class="quantity">1</p>
+                                    <button class="plus">+</button>
+                                </div>
+                            </td>
+                            <td class="money">৳.195</td>
+                        </tr>
+                        <tr class="secondrow">
+                            <td>&times;</td>
+                            <td><img class="cart_img" src="assets/images/New slider/honey.png" width="50px" alt="">
+                                <h5 class="grocery_name">Honey 250gm</h5>
+                            </td>
+                            <td>৳.195</td>
+                            <td>
+                                <div class="add">
+                                    <button class="minus">-</button>
+                                    <p class="quantity">1</p>
+                                    <button class="plus">+</button>
+                                </div>
+                            </td>
+                            <td class="money">৳.195</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-4">
+                    <div class="cart_totals">
+                        <h4>CART TOTALS</h4>
+                        <div class="sub_total">
+                            <h6>Subtotal</h6>
+                            <p>৳.195</p>
+                        </div>
+                        <div class="shipping">
+                            <h6>Shipping</h6>
+                            <p>৳.100</p>
+                        </div>
+                        <div class="to_tal">
+                            <h5>Total</h5>
+                            <h5>৳.295</h5>
+                        </div> <br>
+                        <a class="proceed" href="checkout.html">proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+    </div> <br> <br>
+    <div class="container">
+        <div class="full_cart">
+            <div class="first_cart">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="left_img">
+                            <img src="assets/images/New slider/Honey.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="right_product">
+                            <div class="product_name">
+                                <h5>Ruti</h5>
+                                <p>1 &times; <span class="money">৳.195</span> </p>
+                            </div>
+                            <div class="cross">
+                                <p>&times;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_cart">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="left_img">
+                            <img src="assets/images/New slider/honey.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="right_product">
+                            <div class="product_name">
+                                <h5>Ruti</h5>
+                                <p>1 &times; <span class="money">৳.195</span> </p>
+                            </div>
+                            <div class="cross">
+                                <p>&times;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="row">
+                    <div class="subtotal">
+                        <h5 class="sub_heading">SUBTOTAL</h5>
+                        <h5 class="sub_tk">৳.195</h5>
+                    </div>
+                    <a class="view_cart" href="">View cart</a> <br><br>
+                    <a class="checkout" href="">Checkout</a> <br> <br><br>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+    <!-- footer section  -->
+    <footer id="foot ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-3 ">
+                    <div class="brand ">
+                        <a href=" ">
+                            <img title="Logo " src="./images/logo.jpeg " width="20% " alt=" ">
+                        </a>
+                        <p>Naya Bazar is an e-commerce platform coupled with a chain of brick and mortar stores for safe and pure products in Bangladesh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="contact ">
+                        <h5 class="tant ">CONTACT US</h5>
+                        <div class="address ">
+                            <h6><img src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-location-maps-and-locations-those-icons-fill-those-icons-6.png " />Head Office:</h6>
+                            <p>TejkuniPara, Tejgaon, Dhaka-1205, Bangladesh</p>
+                            <h6><img src="https://img.icons8.com/android/24/000000/phone.png " /> Phone:</h6>
+                            <P>+880 1321-620810</P>
+                            <h6><img src="https://img.icons8.com/material-sharp/24/000000/mail.png " /> E-mail:</h6>
+                            <p>nisorgobazar@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="links ">
+                        <h5 class="tant ">IMPORTANT LINKS</h5>
+                        <ul>
+                            <li><a href="index.html ">About Us</a></li>
+                            <li><a href="products.html ">Privacy Policy</a></li>
+                            <li><a href="track.html ">Terms & Conditions</a></li>
+                            <li><a href="store.html ">Our Blog</a></li>
+                            <li><a href="contact.html ">Contact Us</a></li>
+                            <li><a href="signIn.html ">FAQs</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 ">
+                    <div class="footer_social ">
+                        <h5 class="tant ">Social Media</h5>
+                        <ul>
+                            <li>
+                                <a target="_blank " href="https://www.facebook.com/nisorgobazar " title="Facebook "><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png " />Facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank " href="https://www.facebook.com/messages/t/101757412158708 " title="Messenger "><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-messenger.png " />Messenger</a>
+                            </li>
+                            <li>
+                                <a href=" " title="Twitter "><img src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png " />Twitter</a>
+                            </li>
+                            <li>
+                                <a href=" " title="Instagram "><img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png " />Instagram</a>
+                            </li>
+                            <li>
+                                <a href="# " title="Youtube "><img src="https://img.icons8.com/ios-glyphs/30/000000/youtube-play.png " />Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy ">
+            <p>&copy;All rights reserved by <span style="font-weight: bold; ">NayaBazar.com</span> </p>
+        </div>
+    </footer>
+    <!-- footer end  -->
+</body>
+
+</html>

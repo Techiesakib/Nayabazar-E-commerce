@@ -1,0 +1,493 @@
+/* modal start */
+
+.modals {
+    /* display: none; */
+    /* position: absolute; */
+    z-index: 9;
+    /* padding-top: 130px; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    padding: 0 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* login system */
+
+.login_system {
+    padding: 5px 5px 5px 5px;
+}
+
+.login_system h4 {
+    padding: 10px 0;
+}
+
+.email_login {
+    background: #fff;
+    border: 1px solid #dbb620;
+    text-align: center;
+    padding: 5px 0;
+    transition: .5s ease-in-out;
+}
+
+.email_login h6 {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.email_login:hover {
+    background: rgba(0, 0, 0, 0.109);
+    cursor: pointer;
+}
+
+.fb_login {
+    background: #2379D0;
+    border: 1px solid #1d7bda;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+    transition: .5s ease-in-out;
+}
+
+.fb_login h6 {
+    display: inline-block;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.fb_login:hover {
+    background: #1d7cdadc;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.enter_num {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: .02em;
+    margin-top: 10px;
+}
+
+.phone {
+    border-bottom: 2px solid #dbb620;
+}
+
+.phone input {
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+.sign {
+    text-decoration: none;
+    background: #dbb620;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    transition: .5s ease-in-out;
+}
+
+.sign:hover {
+    background: #f0cc3c;
+    color: #fff;
+}
+
+.this {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.this a {
+    text-decoration: none;
+}
+
+
+/* 2nd step for log in  */
+
+.mymodals {
+    /* display: none; */
+    /* position: absolute; */
+    /*fixed*/
+    z-index: 9;
+    padding-top: 30px;
+    /* left: 150px; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.mymodal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid #888;
+    width: 33%;
+}
+
+
+/* The Close Button */
+
+.myclose {
+    color: #aaaaaa;
+    position: relative;
+    right: -15px;
+    top: -20px;
+    float: right;
+    padding: 0 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.myclose:hover,
+.myclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mylogin_system {
+    padding: 5px 5px 5px 5px;
+}
+
+.mylogin_system h4 {
+    padding: 10px 0;
+}
+
+.myemail_login {
+    background: #fff;
+    border: 1px solid #dbb620;
+    text-align: center;
+    padding: 5px 0;
+    transition: .5s ease-in-out;
+}
+
+.myemail_login h6 {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.myemail_login:hover {
+    background: rgba(0, 0, 0, 0.109);
+    cursor: pointer;
+}
+
+.enters {
+    text-align: center;
+    font-size: 14px;
+    color: #c59e03;
+}
+
+.verified_num {
+    font-weight: bold;
+    font-size: 16px;
+    color: #111;
+}
+
+.phones {
+    border-bottom: 2px solid #dbb620;
+}
+
+.phones input {
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+.phones input[type=tel] {
+    font-size: 16px;
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin-top: 12px;
+}
+
+.double_btn {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.enter {
+    text-decoration: none;
+    color: #fff;
+    background-color: #dbb620;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 0.03em;
+    transition: .5S ease-in-out;
+}
+
+.enter:hover {
+    color: #fff;
+    background-color: #cca91c;
+}
+
+.request {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(119, 117, 117);
+    background-color: rgba(192, 192, 192, 0.452);
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 0.02em;
+    transition: .5S ease-in-out;
+}
+
+.request:hover {
+    color: rgb(119, 117, 117);
+    background-color: rgba(192, 192, 192, 0.74);
+}
+
+
+/* 3rd step of login  */
+
+.phone_modals {
+    /* display: none; */
+    /* position: absolute; */
+    z-index: 9;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.phone_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+
+/* The Close Button */
+
+.phone_close {
+    color: #aaaaaa;
+    position: relative;
+    right: -15px;
+    top: -20px;
+    float: right;
+    padding: 0 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.phone_close:hover,
+.phone_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* login system */
+
+.fb_login {
+    background: #2379D0;
+    border: 1px solid #1d7bda;
+    text-align: center;
+    padding: 5px 0;
+    transition: .5s ease-in-out;
+}
+
+.fb_login h6 {
+    display: inline-block;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.fb_login:hover {
+    background: #1d7cdadc;
+    cursor: pointer;
+}
+
+.phone_system {
+    padding: 5px 5px 5px 5px;
+}
+
+.phone_system h4 {
+    padding: 10px 0;
+}
+
+.phone_login {
+    background: #fff;
+    border: 1px solid #dbb620;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+    transition: .5s ease-in-out;
+}
+
+.phone_login h6 {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.phone_login:hover {
+    background: rgba(0, 0, 0, 0.109);
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.mobile input {
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-bottom: 2px solid #dbb620;
+    padding: 0 0 10px 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.last_btn {
+    text-align: center;
+}
+
+.signs {
+    text-decoration: none;
+    background: #dbb620;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    transition: .5s ease-in-out;
+    margin-top: 20px;
+}
+
+.signs:hover {
+    background: #f6c80f;
+    color: #fff;
+}
+
+.forgot {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.forgot:hover {
+    color: #111;
+}
+
+.this {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.this a {
+    text-decoration: none;
+}
+
+
+/* forgot pass word  */
+
+.pass_system {
+    padding: 5px 5px 5px 5px;
+}
+
+.pass_system h4 {
+    padding: 10px 0;
+}
+
+.pass_system input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #dbb620;
+    width: 100%;
+    margin: 45px 0;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.sub_btn {
+    text-align: center;
+}
+
+.sub {
+    text-decoration: none;
+    background-color: #dbb620;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 0.02em;
+    transition: .5s ease-in-out;
+}
+
+.sub:hover {
+    background-color: #f8ca11;
+    color: #fff;
+}
+
+.will {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.these {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* modal end  */

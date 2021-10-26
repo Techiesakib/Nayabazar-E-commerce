@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+
+/* vertical nav  */
+
+.vertical_main {
+    background: #fff;
+    position: absolute;
+    top: 100;
+    z-index: 299;
+    width: 260px;
+    transition: 0.2s;
+    visibility: hidden;
+    border: 1px solid #F3D250;
+}
+
+.stand:hover {
+    cursor: pointer;
+}
+
+.stand:hover .vertical_main {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/* account dropdown  */
+
+.account_main {
+    border: 1px solid #dbb620;
+    position: absolute;
+    z-index: 99;
+    top: 45px;
+    background-color: #fff;
+    visibility: hidden;
+    /* display: none; */
+    transition: .5s ease-in-out;
+}
+
+nav .profile:hover .account_main ul {
+    visibility: visible;
+    /* display: block; */
+}
+
+
+/* account full details */
+
+.bg {
+    background: rgb(200, 199, 199);
+    text-align: center;
+    padding: 15px;
+}
+
+.bg h3 {
+    font-weight: bold;
+}
+
+.bg p {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bg p a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* dashboard  */
+
+.my_full {
+    padding: 30px;
+}
+
+.my_full .row .col-md-2 {
+    border-right: 1px solid silver;
+}
+
+.account_left h5 {
+    padding-left: 15px;
+}
+
+.account_left ul {
+    padding-left: 0;
+    transition: .2s ease-in-out;
+}
+
+.account_left ul li.active>a {
+    background: rgb(207, 207, 207);
+}
+
+.account_left ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: #111;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.account_left ul li {
+    transition: .5s ease-in-out;
+}
+
+.account_left ul li :hover {
+    background: rgb(231, 229, 229);
+    cursor: pointer;
+}
+
+.account_right {
+    padding: 10px 15px;
+}
+
+.account_right p {
+    color: rgb(117, 116, 116);
+    font-size: 15px;
+}
+
+.account_right span {
+    font-weight: bold;
+}
+
+.option {
+    text-align: center;
+    border: 2px solid #dbb620;
+    padding: 15px 10px 0 10px;
+    transition: .5s ease-in-out;
+}
+
+.option p {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.account_right .row .col-md-3 {
+    margin: 15px 0;
+}
+
+.account_right .row .col-md-3 a {
+    text-decoration: none;
+}
+
+.option:hover {
+    background-color: #dbb620c5;
+    color: #fff;
+}
+
+
+/* orders  */
+
+.order_details {
+    padding: 20px 0 20px 10px;
+}
+
+.order_details table {
+    border: 1px solid silver;
+    width: 100%;
+}
+
+.order_details th {
+    padding: 10px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid silver;
+}
+
+.order_details td {
+    padding: 10px 25px;
+    font-size: 15px;
+    border-bottom: 1px solid silver;
+}
+
+.order_details .view,
+.cancel {
+    text-decoration: none;
+    background: #F3D250;
+    padding: 5px 12px;
+    color: #111;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.view,
+.cancel:hover {
+    color: #111;
+}
+
+
+/* .order_view */
+
+.order_view {
+    padding: 20px;
+}
+
+.order_view h4 {
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.order_view table {
+    width: 850px;
+}
+
+.order_view table th {
+    text-transform: uppercase;
+}
+
+.order_view table th,
+td {
+    border-bottom: 1px solid silver;
+    padding: 15px 30px;
+}
+
+.order_view table th:last-child,
+td:last-child {
+    text-align: right;
+}
+
+.product_names {
+    text-decoration: none;
+    color: rgb(82, 76, 76);
+    font-weight: 500;
+}
+
+.product_names:hover {
+    color: black;
+}
+
+.order_view table th:first-child,
+td:first-child {
+    font-weight: 600;
+}
+
+.place {
+    font-size: 14px;
+}
+
+.total td {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.address_details {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.address_details h5 {
+    font-weight: bold;
+}
+
+
+/* full address  */
+
+.full_address {
+    padding: 20px;
+}
+
+.full_address h5 {
+    font-weight: bold;
+}
+
+.edit {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.billing_address label {
+    margin: 25px 0 5px 0;
+}
+
+.billing_address input {
+    width: 100%;
+    padding: 5px 30px;
+    border-radius: 30px;
+    border: 2px solid #dbb620;
+    outline: none;
+}
+
+.save_address {
+    text-decoration: none;
+    font-size: 18px;
+    background: #F3D250;
+    color: black;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+
+.save_address:hover {
+    color: #fff;
+    background-color: #dbb620;
+}
+
+
+/* account details */
+
+.account_details {
+    padding: 20px;
+}
+
+.account_details label {
+    color: rgb(119, 117, 117);
+    margin: 15px 0 0 0;
+    font-size: 14px;
+}
+
+.account_details input {
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #dbb620;
+    padding: 5px 25px;
+    outline: silver;
+}
+
+.password {
+    padding: 20px;
+    border: 2px solid silver;
+    margin-top: 20px;
+}
+
+.password h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.save {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    color: #111;
+    background: #F3D250;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+}
+
+.save:hover {
+    color: #111;
+    background: #e9be13;
+}

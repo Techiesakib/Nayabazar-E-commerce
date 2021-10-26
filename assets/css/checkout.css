@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* vertical nav close  */
+
+.vertical_main {
+    background: #fff;
+    position: absolute;
+    top: 100;
+    z-index: 299;
+    width: 260px;
+    transition: 0.2s;
+    visibility: hidden;
+    border: 1px solid #F3D250;
+    transition: .2s ease-in-out;
+}
+
+.stand:hover .vertical_main {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/* bg top  */
+
+.bg_top {
+    background: rgb(163, 157, 157);
+    padding: 30px;
+}
+
+.bg_top h4 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bg_top h4 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* checkout section  */
+
+.main_checkout {
+    margin: 70px 0;
+    padding: 10px;
+}
+
+.billing {
+    padding: 20px;
+}
+
+.billing h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.billing input,
+select {
+    width: 100%;
+    padding: 5px 10px 5px 15px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.billing label {
+    margin: 15px 0 0 0;
+}
+
+.back_cart {
+    text-decoration: none;
+    color: #000;
+    background: #F3D250;
+    padding: 15px 20px;
+    transition: .3s ease-in-out;
+}
+
+.back_cart:hover {
+    background: #dbb620;
+    color: #fff;
+}
+
+.order {
+    background-color: rgba(218, 214, 214, 0.329);
+    padding: 10px 60px 40px 60px;
+    border-radius: 10px;
+}
+
+.order h5 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.order table {
+    background-color: #fff;
+    margin: auto;
+}
+
+.order table tr {
+    border-bottom: 1px solid silver;
+}
+
+.order table th {
+    padding: 10px 70px;
+    text-transform: uppercase;
+}
+
+.order table td {
+    padding: 10px 70px;
+}
+
+.subtotal,
+.subtaka {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.total,
+.totaltaka {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.pay {
+    background: #fff;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.privacy {
+    font-size: 14px;
+}
+
+.privacy a {
+    text-decoration: none;
+}
+
+.confirm {
+    text-decoration: none;
+    background: #dbb620;
+    padding: 10px 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+
+.confirm:hover {
+    background: #F3D250;
+    color: #000;
+}

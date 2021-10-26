@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* vertical nav close  */
+
+.vertical_main {
+    background: #fff;
+    position: absolute;
+    top: 100;
+    z-index: 299;
+    width: 260px;
+    transition: 0.2s;
+    visibility: hidden;
+    border: 1px solid #F3D250;
+    transition: .2s ease-in-out;
+}
+
+.stand:hover .vertical_main {
+    visibility: visible;
+    cursor: pointer;
+}
+
+
+/* cart  */
+
+.cart_heading {
+    padding: 10px;
+}
+
+.cart_heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.full_cart {
+    width: 30%;
+    margin: auto;
+    box-shadow: 0 0 40px silver;
+}
+
+.first_cart,
+.second_cart {
+    border-bottom: 1px solid #F3D250;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+}
+
+.left_img {
+    text-align: center;
+}
+
+.left_img img {
+    width: 70px;
+    margin-top: 15px;
+}
+
+.right_product {
+    padding: 20px 0;
+}
+
+.product_name {
+    display: inline-block;
+}
+
+.product_name p {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.money {
+    font-weight: 500;
+}
+
+.cross {
+    display: inline-block;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 20px 0 0;
+}
+
+.sub {
+    width: 100%;
+    margin: auto;
+}
+
+.subtotal {
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.sub_heading {
+    display: inline-block;
+}
+
+.sub_tk {
+    float: right;
+}
+
+.view_cart {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(219, 215, 215);
+    padding: 10px 0;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    transition: .5s ease-in-out;
+}
+
+.view_cart:hover {
+    color: #111;
+    background-color: rgb(187, 187, 187);
+}
+
+.checkout {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #dbb620;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+    transition: .5s ease-in-out;
+}
+
+.checkout:hover {
+    color: #fff;
+    background-color: #f5cb26;
+}
+
+
+/* big cart  */
+
+.firstrow th,
+.secondrow td {
+    padding: 20px 0px;
+}
+
+.firstrow {
+    border-bottom: 1px solid #F3D250;
+}
+
+.secondrow {
+    border-bottom: 1px solid #F3D250;
+}
+
+.firstrow th {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.firstrow th:nth-child(1),
+.secondrow td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.firstrow th:nth-child(2) {
+    text-align: center;
+}
+
+.firstrow th:nth-child(2),
+.secondrow td:nth-child(2) {
+    width: 50%;
+}
+
+.firstrow th:nth-child(3),
+.secondrow td:nth-child(3) {
+    width: 10%;
+    text-align: center;
+}
+
+.firstrow th:nth-child(4),
+.secondrow td:nth-child(4) {
+    width: 10%;
+    text-align: center;
+}
+
+.firstrow th:nth-child(5),
+.secondrow td:nth-child(5) {
+    width: 25%;
+    text-align: center;
+}
+
+.grocery_name {
+    display: inline-block;
+}
+
+.add {
+    display: flex;
+    border: 1px solid #F3D250;
+    width: 90px;
+}
+
+.minus {
+    border: none;
+    padding: 0 10px;
+    font-size: 15px;
+    background: none;
+    border-right: 1px solid #F3D250;
+}
+
+.minus:hover {
+    background-color: #F3D250;
+    transition: .5s;
+}
+
+.quantity {
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.plus {
+    border: none;
+    padding: 0 10px;
+    font-size: 15px;
+    background: none;
+    border-left: 1px solid #F3D250;
+}
+
+.plus:hover {
+    background-color: #F3D250;
+    transition: .5s;
+}
+
+.cart_totals {
+    box-shadow: 0 0 40px silver;
+    padding: 20px 20px;
+}
+
+.cart_totals h4 {
+    padding: 5px 10px;
+}
+
+.sub_total,
+.shipping,
+.to_tal {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #F3D250;
+    text-align: center;
+}
+
+.sub_total h6,
+.shipping h6,
+.to_tal h5 {
+    font-weight: bold;
+}
+
+.to_tal {
+    border: none;
+}
+
+.proceed {
+    text-decoration: none;
+    background-color: #dbb620;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+
+.proceed:hover {
+    color: #fff;
+    background-color: #f5ca20;
+}
